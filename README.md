@@ -6,6 +6,11 @@
 STM32 기반으로 CAN 통신을 활용한 분산 제어 차량 시스템을 구현한 프로젝트입니다.
 각 MCU는 역할을 분리하여 센서 데이터 처리와 모터 제어를 수행하며, CAN Bus를 통해 실시간으로 데이터를 송수신합니다.
 
+## Source Code
+- [F401RE_Front_Motor.zip](링크) — MCU 2: CAN 수신 및 전방 모터 PWM 제어
+- [F401RE_Rear_Motor.zip](링크) — MCU 3: CAN 수신 및 후방 모터 PWM 제어
+- [HC-SR04.zip](링크) — MCU 1: 초음파 센서 거리 측정 및 CAN 송신
+  
 ## System Architecture
 - MCU 1 (Sensor Node) → 초음파 센서(HC-SR04)로 거리 측정 → CAN 메시지로 데이터 송신
 - MCU 2 (Front Control) → CAN 데이터 수신 → 전방 모터 제어
